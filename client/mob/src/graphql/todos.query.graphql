@@ -1,0 +1,7 @@
+query GetAllToDos {
+  todos {
+    title
+    status
+    _id
+  }
+}

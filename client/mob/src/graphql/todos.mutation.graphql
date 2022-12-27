@@ -1,0 +1,13 @@
+mutation DeleteToDoById($deleteToDoByIdId: ID!) {
+  deleteToDoById(id: $deleteToDoByIdId)
+}
+mutation CreateToDo($toDoInput: ToDoInput) {
+  createTodo(toDoInput: $toDoInput) {
+    title
+    status
+    _id
+  }
+}
+mutation EditToDo($editTodoId: ID!, $toDoInput: ToDoInput) {
+  editTodo(id: $editTodoId, toDoInput: $toDoInput)
+}

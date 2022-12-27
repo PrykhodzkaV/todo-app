@@ -1,0 +1,14 @@
+ type Query {
+    getAllToDos: [ToDo]
+  }
+
+extend type ToDo {
+    _id:ID!
+    title: String!
+    status: Boolean!
+  }
+
+input ToDoInput {
+    title: String
+    status: Boolean
+}
